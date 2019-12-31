@@ -55,6 +55,7 @@ while wait ==True:
     else:
         wait = True
 
+easy = target_str
 
 def base64_decode():
     global easy
@@ -62,7 +63,7 @@ def base64_decode():
     easy = base64.b64decode(easy)
     easy = easy.decode()
  
- def hex_decode():
+def hex_decode():
     global easy
     easy = easy.encode()
     easy = binascii.unhexlify(easy)
@@ -76,19 +77,43 @@ def final():
 
 
 wait2 = True
+x = 0
+main_loop = True
 
-while wait 2 ==True 
+while wait2 ==True: 
 
-decode? = input("Time to decode! If you don't want to just hit enter.")
+    decode = input("Time to decode! If you don't want to just hit enter.")
 
-if decode? =="":
-    wait2 = False
+    if decode =="":
+        wait2 = False
 
-else
+    else:
+        how_much = int(input("How many times has this been encoded?\n>>>"))
 
+        while main_loop ==True:
+            os.system('clear')
+            print("loading")
+            time.sleep(1)
+            os.system('clear')
+            print("loading.")
+            time.sleep(1)
+            os.system('clear')
+            print("loading..")
+            time.sleep(1)
+            os.system('clear')
+            print("loading...")
+            time.sleep(1)
+            hex_decode()
+            base64_decode()
+            x += 1
 
-
-
+            if x == how_much:
+                final()
+                main_loop = False
+                wait2 = False
+            else:
+                main_looop = True
+                
 
 
 
