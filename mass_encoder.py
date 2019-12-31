@@ -9,12 +9,14 @@ target_str = input("Enter the thing that you want to be encoded\n>>>")
 how_many = int(input("How many times do you want your string to be encoded?\n>>>"))
 
 
+# convert the target string into base64
 def convert_to_64():
     global target_str
     target_str = target_str.encode()
     target_str = base64.b64encode(target_str)
     target_str = target_str.decode()
 
+# convert the target string into hex
 def convert_to_hex():
     global target_str
     target_str = target_str.encode()
@@ -57,6 +59,7 @@ while wait ==True:
         wait = False
     else:
         wait = True
+
 
 
 
