@@ -1,5 +1,7 @@
 #! /usr/bin/local/python3/
 
+# arbitrary program to encode, reencode in a loop of base64 and hex
+
 import base64
 import time 
 import binascii
